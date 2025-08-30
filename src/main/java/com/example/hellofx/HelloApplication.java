@@ -14,14 +14,14 @@ public class HelloApplication extends Application {
 
        try{
            Parent root = FXMLLoader.load(
-                   Objects.requireNonNull(getClass().getResource("/com/example/hellofx/Scene1.fxml"))
+                   Objects.requireNonNull(getClass().getResource("/com/example/hellofx/Scene1a.fxml"))
            );
 
            Scene scene = new Scene(root);
-           scene.getStylesheets().add(
-                   Objects.requireNonNull(getClass().getResource("/com/example/hellofx/style.css"))
-                           .toExternalForm()
-           );
+//           scene.getStylesheets().add(
+//                   Objects.requireNonNull(getClass().getResource("/com/example/hellofx/style.css"))
+//                           .toExternalForm()
+//           );
 
            stage.setScene(scene);
            stage.show();
